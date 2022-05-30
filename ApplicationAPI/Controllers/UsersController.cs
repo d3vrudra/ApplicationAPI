@@ -1,7 +1,8 @@
 ﻿using ApplicationAPI.Data;
 using ApplicationAPI.Entities;
 using Microsoft.AspNetCore.Mvc;
-using System.Data.Entity;
+
+using Microsoft.EntityFrameworkCore;
 
 namespace ApplicationAPI.Controllers
 {
