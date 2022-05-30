@@ -1,14 +1,14 @@
 ﻿using ApplicationAPI.Data;
 using ApplicationAPI.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 using Microsoft.EntityFrameworkCore;
 
 namespace ApplicationAPI.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class UsersController : ControllerBase
+    [Authorize]
+    public class UsersController : BaseAPIcontroller
     {
         private readonly DataContext _context;
         public UsersController(DataContext context)
